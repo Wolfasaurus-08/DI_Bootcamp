@@ -9,5 +9,5 @@
 name = "Anne"
 age = "38"
 shoe_size = "39"
-info=f"the owner of the {shoe_size} feet is named {name}; she has lived {age} years on this earth"
+info=f"the owner of the {shoe_size} feet is named {name}; she has lived {age} years on this earth."
 print (info)
