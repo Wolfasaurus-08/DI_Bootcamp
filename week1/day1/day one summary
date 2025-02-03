@@ -1,0 +1,13 @@
+define the folowing value types
+strings: anything inside quotation marks, immutable
+integers: whole numbers, can math 
+floats: numbers with decimals, can math
+booleans: objects that show true and false values
+
+strings
+    methods
+     string.upper()
+integers, floats
+    <,>,-,+,==
+booleans 
+    and, or 
