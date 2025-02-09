@@ -17,7 +17,7 @@
 #for i in range(2,10,2):
  # print(i)
 
-#innumerate()
+#ennumerate()
 
 #fruits = ['apple', 'banana', 'kiwi', 'pear']
 #for i, fruit in enumerate(fruits):
@@ -26,6 +26,6 @@
  #print(i, fruits)
 
 #multiplication table 
-num=int(input("pick a number to multiply")) 
-for i in range(1,11): 
-    print(num * i)
+#num=int(input("pick a number to multiply")) 
+#for i in range(1,11): 
+#    print(num * i)

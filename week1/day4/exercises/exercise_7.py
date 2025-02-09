@@ -32,5 +32,5 @@ def main(season):
 main ("winter")
 main ("spring")
 main ("summer")
-main ("autmn")
+main ("autumn")
 

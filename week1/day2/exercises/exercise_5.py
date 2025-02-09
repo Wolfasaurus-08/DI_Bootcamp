@@ -4,7 +4,11 @@
 #Using a for loop, that loops from 1 to 20(inclusive), print out every element which has an even index.
 
 #range (start,stop,step)
+my_list=[]
 for i in range(1,21):
-    print (i)
+    my_list.append(i)
+print(my_list)
+my_list.clear()
 for i in range(1,21,2):
-    print(i)
+    my_list.append(i)
+print(my_list)

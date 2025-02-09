@@ -1,3 +1,3 @@
-def learning_greeting(subject, school):
+def display_message(subject, school):
     print(f'I am learning {subject} at {school}, it is going great!')
-learning_greeting('data analytics', 'DI')
+display_message('data analytics', 'DI')
