@@ -58,7 +58,7 @@ ryan_family.family_list()
 
 ryan_family.born(name='John', age=0, gender='Male', is_18=False)
 
-print(ryan_family.is_18('Michael'))
-print(ryan_family.is_18('John')) 
+#print(ryan_family.is_18('Michael'))
+#print(ryan_family.is_18('John')) 
 
 ryan_family.family_list()

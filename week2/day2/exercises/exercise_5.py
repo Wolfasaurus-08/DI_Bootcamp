@@ -8,8 +8,8 @@
 # Prints the family’s last name and all the members’ details (ie. use the super() function, to call the family_presentation method)
 # Create an instance of the Incredibles class, with the “Incredibles” last name, and the below members. (did whoever make this not see the movie?)
 #     [
-#         {'name':'Michael','age':35,'gender':'Male','is_child':False,'power': 'fly','incredible_name':'MikeFly'},
-#         {'name':'Sarah','age':32,'gender':'Female','is_child':False,'power': 'read minds','incredible_name':'SuperWoman'}
+#         {'name':'Michael','age':35,'gender':'Male','is_18':True,'power': 'fly','incredible_name':'MikeFly'},
+#         {'name':'Sarah','age':32,'gender':'Female','is_18':True,'power': 'read minds','incredible_name':'SuperWoman'}
 #     ]
 # Call the incredible_presentation method.
 # Use the born method inherited from the Family class to add Baby Jack with the following power: “Unknown Power”.
@@ -19,19 +19,19 @@
 
 
 class FamilyMember:
-    def __init__(self, name, age, gender, is_child):
+    def __init__(self, name, age, gender, is_18):
         self.name = name
         self.age = age
         self.gender = gender
-        self.is_child = is_child
+        self.is_18 = is_18
 
     def __str__(self):
         return f"Name: {self.name}, Age: {self.age}, Gender: {self.gender}"
 
 
 class IncredibleMember(FamilyMember):
-    def __init__(self, last_name, name, age, gender, is_child, power, incredible_name):
-        super().__init__(last_name, name, age, gender, is_child)
+    def __init__(self, last_name, name, age, gender, is_18, power, incredible_name):
+        super().__init__(last_name, name, age, gender, is_18)
         self.power = power
         self.incredible_name = incredible_name
 
@@ -74,12 +74,12 @@ class TheIncredibles(Family):
 
 incredibles = TheIncredibles("Parr")
 
-# bob = IncredibleMember('Bob Parr', 40, 'Male', False, 'Super strength', 'Mr. Incredible')
-# helen = IncredibleMember('Helen Parr', 38, 'Female', False, 'Elasticity', 'Elastigirl')
-# violet = IncredibleMember('Violet Parr', 14, 'Female', True, 'Invisibility', 'Violet')
-# dash = IncredibleMember('Dashiell Parr', 10, 'Male', True, 'Super speed', 'Dash')
-michael = IncredibleMember('Parr', 'Michael', 35, 'Male', False, 'fly', 'MikeFly')
-sarah = IncredibleMember('Parr', 'Sarah', 32, 'Female', False, 'read minds', 'SuperWoman')
+# bob = IncredibleMember('Bob Parr', 40, 'Male', True, 'Super strength', 'Mr. Incredible')
+# helen = IncredibleMember('Helen Parr', 38, 'Female', True, 'Elasticity', 'Elastigirl')
+# violet = IncredibleMember('Violet Parr', 14, 'Female', False, 'Invisibility', 'Violet')
+# dash = IncredibleMember('Dashiell Parr', 10, 'Male', False, 'Super speed', 'Dash')
+michael = IncredibleMember('Parr', 'Michael', 35, 'Male', True, 'fly', 'MikeFly')
+sarah = IncredibleMember('Parr', 'Sarah', 32, 'Female', True, 'read minds', 'SuperWoman')
 # incredibles.add_member(bob)
 # incredibles.add_member(helen)
 # incredibles.add_member(violet)

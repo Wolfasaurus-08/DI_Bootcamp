@@ -14,7 +14,7 @@
 # “dog_name shakes your hand”.
 # “dog_name plays dead”.
 
-#from exercise_2 import Dog #it imported the entire file somehow and not just the class. 
+#from exercise_2 import Dog #it imported the entire file somehow and not just the class, so I copied and pasted just the class. 
 
 import random
 class Dog:  #
