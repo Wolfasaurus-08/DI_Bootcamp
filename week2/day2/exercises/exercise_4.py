@@ -31,7 +31,7 @@ class Family:
         self.members.append({'name': name, 'age': age, 'gender': gender, 'is_18': is_18})
 
     def born(self, name, age, gender, is_18):
-        self.members.append({'name': name, 'age': age, 'gender': gender, 'is_18': is_18})
+        self.add_member(name, age, gender, is_18)
         print(f"Congratulations to the {self.last_name} family on the birth of {name}!")
 
     def is_18(self, name):
@@ -49,8 +49,8 @@ class RyanFamily(Family):
     def __init__(self):
         super().__init__('Ryan')
 
+# Example usage
 ryan_family = RyanFamily()
-
 ryan_family.add_member(name='Michael', age=35, gender='Male', is_18=True)
 ryan_family.add_member(name='Sarah', age=32, gender='Female', is_18=True)
 
@@ -58,7 +58,8 @@ ryan_family.family_list()
 
 ryan_family.born(name='John', age=0, gender='Male', is_18=False)
 
-#print(ryan_family.is_18('Michael'))
-#print(ryan_family.is_18('John')) 
-
 ryan_family.family_list()
+
+# Uncomment to check age
+# print(ryan_family.is_18('Michael'))  # True
+# print(ryan_family.is_18('John'))  # False
