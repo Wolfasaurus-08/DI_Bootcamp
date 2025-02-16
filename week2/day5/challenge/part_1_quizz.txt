@@ -2,7 +2,8 @@ What is a class?  a blueprint fot creating objects.
 
 What is an instance? an individual object created by the class
 
-What is encapsulation? the concept of bundling data  and methods together in a single class. It also involves restricting direct access to some of the object's components. 
+What is encapsulation? the concept of bundling data  and methods together in a single class. 
+        It also involves restricting direct access to some of the object's components. 
         This is usually achieved by using private variables (prefixing with _ or __)
 What is abstraction? hiding the more complex features and showing only essential fetures of an object,  
         reducing  programing complexity and effort. 
@@ -10,6 +11,11 @@ What is abstraction? hiding the more complex features and showing only essential
 What is inheritance? when one class gets attributes fprm another class. 
         This allows for code reuse and the creation of a hierarchical relationship between classes
 
-What is multiple inheritance?
-What is polymorphism?
-What is method resolution order or MRO?
+What is multiple inheritance? where a class can inherit attributes and methods from more than one
+         parent class. This allows the child class to utilize and override the functionality of 
+         multiple base classes.
+What is polymorphism? is the ability of different objects to respond to the same operation
+         in different ways.
+
+What is method resolution order or MRO? is the order in which a programming 
+        language resolves method or attribute references. 
